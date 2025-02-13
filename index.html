@@ -1,5 +1,3 @@
-# Code Refactored
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,6 +28,10 @@
             margin: 10px;
             border-radius: 10px;
         }
+        .bordered-img {
+            border: 2px solid black; /* Added black border */
+            display: inline-block; /* Ensures the border wraps around the image */
+        }
         button {
             padding: 10px 20px;
             font-size: 16px;
@@ -46,7 +48,8 @@
     </style>
 </head>
 <body>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvdm4OC0xwERq8GLGOId69-OhLKsQwZ1fvVA&s" alt="Valentine's Day Image" style="position: absolute; top: 20px; left: 20px; width: 100px; height: auto;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvdm4OC0xwERq8GLGOId69-OhLKsQwZ1fvVA&s" alt="Valentine's Day Image" class="bordered-img" style="position: absolute; top: 20px; left: 20px; width: 100px; height: auto;">
+    <span style="position: absolute; top: 20px; left: 130px; color: white;">(Us fr)</span> <!-- Added text next to the image -->
     <div class="container">
         <h1>Happy Valentine's Day, Mara!</h1>
         <p>Enjoy this interactive gift inspired by your favorite themes!</p>
